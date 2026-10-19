@@ -36,5 +36,22 @@ namespace ProgettoHotel
         {
 
         }
+
+        private void btn_calcolo_Click(object sender, EventArgs e)
+        {
+            int giorni = Convert.ToInt32(txt_giorni.Text), costo = 0;
+            string stagione = cmb_stagione.SelectedItem.ToString(), stanza = cmb_stanza.SelectedItem.ToString();
+            if (stagione == "Bassa Stagione")
+            {
+                if (stanza == "Base")
+                {
+                    costo = 15;
+                }
+                else if (stanza == "Media")
+                {
+                    costo = 30;
+                }
+            }
+        }
     }
 }
