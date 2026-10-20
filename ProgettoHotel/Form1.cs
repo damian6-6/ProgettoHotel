@@ -39,8 +39,9 @@ namespace ProgettoHotel
 
         private void btn_calcolo_Click(object sender, EventArgs e)
         {
-            int giorni = Convert.ToInt32(txt_giorni.Text), costo = 0;
+            int giorni = Convert.ToInt32(txt_giorni.Text), parcheggio;
             string stagione = cmb_stagione.SelectedItem.ToString(), stanza = cmb_stanza.SelectedItem.ToString();
+            double costo = 0, costoTot;
             if (stagione == "Bassa Stagione")
             {
                 if (stanza == "Base")
@@ -51,7 +52,64 @@ namespace ProgettoHotel
                 {
                     costo = 30;
                 }
+                else if (stanza == "Alta")
+                {
+                    costo = 45;
+                }
             }
+            else if (stagione == "Media Stagione")
+            {
+                if (stanza == "Base")
+                {
+                    costo = 20;
+                }
+                else if (stanza == "Media")
+                {
+                    costo = 35;
+                }
+                else if (stanza == "Alta")
+                {
+                    costo = 50;
+                }
+            }
+            else if (stagione == "Alta Stagione")
+            {
+                if (stanza == "Base")
+                {
+                    costo = 25;
+                }
+                else if (stanza == "Media")
+                {
+                    costo = 40;
+                }
+                else if (stanza == "Alta")
+                {
+                    costo = 55;
+                }
+            }
+            costoTot = costo * giorni;
+            if (giorni > 3 && giorni < 7)
+            {
+                costoTot = costoTot * 0.75;
+            }
+            else if (giorni > 7)
+            {
+                costoTot = costoTot * 0.65;
+            }
+            else
+            {
+
+            }
+            if (chk_parcheggio.Checked)
+            {
+                parcheggio = giorni * 5;
+            }
+            else
+            {
+                parcheggio = 0;
+            }
+            
+            costoTot = costoTot + parcheggio;
         }
     }
 }
