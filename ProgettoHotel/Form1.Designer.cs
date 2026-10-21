@@ -39,15 +39,16 @@
             this.lbl_n5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_calcolo = new System.Windows.Forms.Button();
+            this.lbl_prezzo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_n1
             // 
             this.lbl_n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n1.Location = new System.Drawing.Point(237, 7);
+            this.lbl_n1.Location = new System.Drawing.Point(21, 9);
             this.lbl_n1.Name = "lbl_n1";
-            this.lbl_n1.Size = new System.Drawing.Size(280, 27);
+            this.lbl_n1.Size = new System.Drawing.Size(324, 27);
             this.lbl_n1.TabIndex = 0;
             this.lbl_n1.Text = "BENVENUTO/A DA DAME\'S HOTEL";
             this.lbl_n1.Click += new System.EventHandler(this.label1_Click);
@@ -59,7 +60,7 @@
             "Bassa stagione",
             "Media stagione",
             "Alta stagione"});
-            this.cmb_stagione.Location = new System.Drawing.Point(25, 84);
+            this.cmb_stagione.Location = new System.Drawing.Point(24, 84);
             this.cmb_stagione.Name = "cmb_stagione";
             this.cmb_stagione.Size = new System.Drawing.Size(123, 21);
             this.cmb_stagione.TabIndex = 1;
@@ -72,16 +73,16 @@
             "Base",
             "Media",
             "Alta"});
-            this.cmb_stanza.Location = new System.Drawing.Point(194, 84);
-            this.cmb_stanza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_stanza.Location = new System.Drawing.Point(25, 148);
+            this.cmb_stanza.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_stanza.Name = "cmb_stanza";
             this.cmb_stanza.Size = new System.Drawing.Size(92, 21);
             this.cmb_stanza.TabIndex = 2;
             // 
             // txt_giorni
             // 
-            this.txt_giorni.Location = new System.Drawing.Point(25, 148);
-            this.txt_giorni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_giorni.Location = new System.Drawing.Point(24, 212);
+            this.txt_giorni.Margin = new System.Windows.Forms.Padding(2);
             this.txt_giorni.Name = "txt_giorni";
             this.txt_giorni.Size = new System.Drawing.Size(87, 20);
             this.txt_giorni.TabIndex = 3;
@@ -106,7 +107,7 @@
             this.lbl_n3.AutoSize = true;
             this.lbl_n3.BackColor = System.Drawing.Color.Gold;
             this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n3.Location = new System.Drawing.Point(191, 64);
+            this.lbl_n3.Location = new System.Drawing.Point(24, 122);
             this.lbl_n3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n3.Name = "lbl_n3";
             this.lbl_n3.Size = new System.Drawing.Size(158, 15);
@@ -118,7 +119,7 @@
             this.lbl_n4.AutoSize = true;
             this.lbl_n4.BackColor = System.Drawing.Color.Gold;
             this.lbl_n4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n4.Location = new System.Drawing.Point(22, 130);
+            this.lbl_n4.Location = new System.Drawing.Point(21, 186);
             this.lbl_n4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n4.Name = "lbl_n4";
             this.lbl_n4.Size = new System.Drawing.Size(178, 15);
@@ -129,8 +130,8 @@
             // 
             this.chk_parcheggio.AutoSize = true;
             this.chk_parcheggio.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_parcheggio.Location = new System.Drawing.Point(25, 222);
-            this.chk_parcheggio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chk_parcheggio.Location = new System.Drawing.Point(25, 282);
+            this.chk_parcheggio.Margin = new System.Windows.Forms.Padding(2);
             this.chk_parcheggio.Name = "chk_parcheggio";
             this.chk_parcheggio.Size = new System.Drawing.Size(94, 21);
             this.chk_parcheggio.TabIndex = 7;
@@ -142,7 +143,7 @@
             this.lbl_n5.AutoSize = true;
             this.lbl_n5.BackColor = System.Drawing.Color.Gold;
             this.lbl_n5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n5.Location = new System.Drawing.Point(22, 190);
+            this.lbl_n5.Location = new System.Drawing.Point(21, 250);
             this.lbl_n5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n5.Name = "lbl_n5";
             this.lbl_n5.Size = new System.Drawing.Size(140, 30);
@@ -153,8 +154,8 @@
             // 
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::ProgettoHotel.Properties.Resources.Gemini_Generated_Image_mzdct9mzdct9mzdc;
-            this.pictureBox1.Location = new System.Drawing.Point(316, 106);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(295, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(375, 238);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,8 +167,8 @@
             this.btn_calcolo.BackColor = System.Drawing.Color.Wheat;
             this.btn_calcolo.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_calcolo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_calcolo.Location = new System.Drawing.Point(25, 262);
-            this.btn_calcolo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_calcolo.Location = new System.Drawing.Point(25, 328);
+            this.btn_calcolo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_calcolo.Name = "btn_calcolo";
             this.btn_calcolo.Size = new System.Drawing.Size(86, 32);
             this.btn_calcolo.TabIndex = 10;
@@ -175,12 +176,23 @@
             this.btn_calcolo.UseVisualStyleBackColor = false;
             this.btn_calcolo.Click += new System.EventHandler(this.btn_calcolo_Click);
             // 
+            // lbl_prezzo
+            // 
+            this.lbl_prezzo.AutoSize = true;
+            this.lbl_prezzo.Location = new System.Drawing.Point(121, 339);
+            this.lbl_prezzo.Name = "lbl_prezzo";
+            this.lbl_prezzo.Size = new System.Drawing.Size(40, 13);
+            this.lbl_prezzo.TabIndex = 11;
+            this.lbl_prezzo.Text = "Totale:";
+            this.lbl_prezzo.Click += new System.EventHandler(this.lbl_prezzo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(734, 397);
+            this.Controls.Add(this.lbl_prezzo);
             this.Controls.Add(this.btn_calcolo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_n5);
@@ -213,6 +225,7 @@
         private System.Windows.Forms.Label lbl_n5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_calcolo;
+        private System.Windows.Forms.Label lbl_prezzo;
     }
 }
 
