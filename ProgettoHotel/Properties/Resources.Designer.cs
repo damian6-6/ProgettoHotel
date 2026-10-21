@@ -63,9 +63,39 @@ namespace ProgettoHotel.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_fhbsmqfhbsmqfhbs {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_fhbsmqfhbsmqfhbs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_mzdct9mzdct9mzdc {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_mzdct9mzdct9mzdc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_t064aut064aut064 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_t064aut064aut064", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_x7n10kx7n10kx7n1 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_x7n10kx7n10kx7n1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

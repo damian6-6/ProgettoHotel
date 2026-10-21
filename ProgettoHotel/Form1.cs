@@ -127,5 +127,27 @@ namespace ProgettoHotel
         {
 
         }
+
+        private void btn_stanza_Click(object sender, EventArgs e)
+        {
+            string stanzaScelta = cmb_stanza.SelectedItem?.ToString();
+
+            if (stanzaScelta == "Base")
+            {
+                pcbox_stanza.Image = Properties.Resources.Gemini_Generated_Image_x7n10kx7n10kx7n1;
+            }
+            else if (stanzaScelta == "Media")
+            {
+                pcbox_stanza.Image = Properties.Resources.Gemini_Generated_Image_fhbsmqfhbsmqfhbs;
+            }
+            else if (stanzaScelta == "Alta")
+            {
+                pcbox_stanza.Image = Properties.Resources.Gemini_Generated_Image_t064aut064aut064;
+            }
+            else
+            {
+                MessageBox.Show("Seleziona prima un tipo di stanza valido!");
+            }
+        }
     }
 }
